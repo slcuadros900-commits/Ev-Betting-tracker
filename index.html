@@ -1872,9 +1872,9 @@ const SEED_BETS = [
     stake: 13.41,
     date: '2026-03-06',
     toWin: 16.09,
-    status: 'pending',
-    pl: 0,
-    note: 'C$13.41 ($9.79 USD)'
+    status: 'loss',
+    pl: -13.41,
+    note: 'C$13.41 ($9.79 USD) | Alcaraz won 6-2, 6-3'
   },
   {
     id: 1740268800120,
@@ -1948,14 +1948,14 @@ const SEED_BETS = [
     id: 1740268800125,
     type: 'single',
     desc: 'Rosas Jr. ML',
-    sport: 'Boxing',
+    sport: 'MMA',
     odds: '-220',
     stake: 5.00,
     date: '2026-03-06',
     toWin: 2.27,
-    status: 'pending',
-    pl: 0,
-    note: 'C$5'
+    status: 'win',
+    pl: 2.27,
+    note: 'C$5 | Rosas Jr. def. Font UD'
   },
   {
     id: 1740268800126,
@@ -2000,32 +2000,32 @@ const SEED_BETS = [
     id: 1740268800129,
     type: 'parlay',
     legs: [
-      { desc: 'OKC Thunder -2.5 2nd Quarter Spread', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'OKC Thunder ML', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Isaiah Joe 2+ Three Pointers', sport: 'NBA', odds: '—', status: 'pending' }
+      { desc: 'OKC Thunder -2.5 2nd Quarter Spread', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'OKC Thunder ML', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Isaiah Joe 2+ Three Pointers', sport: 'NBA', odds: '—', status: 'win' }
     ],
     stake: 5.00,
     date: '2026-03-07',
     toWin: 9.43,
     combinedOdds: '+145 (+30% boost)',
-    status: 'pending',
-    pl: 0,
-    note: 'C$5 | +145 base with 30% profit boost'
+    status: 'win',
+    pl: 9.43,
+    note: 'C$5 | +145 base with 30% profit boost | OKC 104-97, Joe 2/7 3PT'
   },
   {
     id: 1740268800130,
     type: 'parlay',
     legs: [
-      { desc: 'Sabres vs Predators U1.5 1st Period Goals', sport: 'NHL', odds: '—', status: 'pending' },
-      { desc: 'Nashville Predators +3 Spread', sport: 'NHL', odds: '—', status: 'pending' }
+      { desc: 'Sabres vs Predators U1.5 1st Period Goals', sport: 'NHL', odds: '—', status: 'win' },
+      { desc: 'Nashville Predators +3 Spread', sport: 'NHL', odds: '—', status: 'win' }
     ],
     stake: 5.00,
     date: '2026-03-07',
     toWin: 8.00,
     combinedOdds: '+160',
-    status: 'pending',
-    pl: 0,
-    note: 'C$5 | +160'
+    status: 'win',
+    pl: 8.00,
+    note: 'C$5 | +160 | Sabres won 3-2, Preds covered +3'
   },
   {
     id: 1740268800131,
@@ -2036,9 +2036,9 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-07',
     toWin: 6.67,
-    status: 'pending',
-    pl: 0,
-    note: 'C$10'
+    status: 'loss',
+    pl: -10.00,
+    note: 'C$10 | Djokovic won 4-6, 6-1, 6-2 (margin 7 games)'
   },
   {
     id: 1740268800132,
@@ -2049,9 +2049,9 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-03-07',
     toWin: 10.95,
-    status: 'pending',
-    pl: 0,
-    note: 'C$15'
+    status: 'win',
+    pl: 10.95,
+    note: 'C$15 | Ruzic won set 1 6-4'
   },
   {
     id: 1740268800133,
@@ -2062,9 +2062,9 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-07',
     toWin: 7.25,
-    status: 'pending',
-    pl: 0,
-    note: 'C$10'
+    status: 'win',
+    pl: 7.25,
+    note: 'C$10 | Set 1 went 6-4 (10 total games)'
   },
   {
     id: 1740268800134,
@@ -2075,9 +2075,9 @@ const SEED_BETS = [
     stake: 5.00,
     date: '2026-03-07',
     toWin: 6.10,
-    status: 'pending',
-    pl: 0,
-    note: 'C$5'
+    status: 'win',
+    pl: 6.10,
+    note: 'C$5 | Fight went 5 rounds (UD)'
   },
   {
     id: 1740268800135,
@@ -2088,9 +2088,9 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-07',
     toWin: 6.37,
-    status: 'pending',
-    pl: 0,
-    note: 'C$10'
+    status: 'win',
+    pl: 6.37,
+    note: 'C$10 | Final 96-84 Alabama (180 total)'
   },
   {
     id: 1740268800136,
@@ -2101,9 +2101,9 @@ const SEED_BETS = [
     stake: 5.00,
     date: '2026-03-07',
     toWin: 5.70,
-    status: 'pending',
-    pl: 0,
-    note: 'C$5'
+    status: 'loss',
+    pl: -5.00,
+    note: 'C$5 | Keys won in straight sets'
   }
 ];
 // ── Firebase SDK config ───────────────────────────────────────────────────────
