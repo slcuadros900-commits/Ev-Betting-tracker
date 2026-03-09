@@ -1992,9 +1992,9 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-03-07',
     toWin: 12.00,
-    status: 'pending',
+    status: 'push',
     pl: 0,
-    note: 'C$15'
+    note: 'C$15 | Gauff retired — bet voided, stake returned'
   },
   {
     id: 1740268800129,
@@ -2114,9 +2114,9 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-08',
     toWin: 15.50,
-    status: 'pending',
-    pl: 0,
-    note: 'C$10'
+    status: 'win',
+    pl: 15.50,
+    note: 'C$10 | O\'Neale 6+ rebounds ✅'
   },
   {
     id: 1740268800138,
@@ -2140,9 +2140,9 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-08',
     toWin: 13.80,
-    status: 'pending',
-    pl: 0,
-    note: 'C$10'
+    status: 'loss',
+    pl: -10.00,
+    note: 'C$10 | Banchero had 3 assists'
   },
   {
     id: 1740268800140,
@@ -2153,25 +2153,25 @@ const SEED_BETS = [
     stake: 9.86,
     date: '2026-03-08',
     toWin: 11.83,
-    status: 'pending',
-    pl: 0,
-    note: 'C$9.86'
+    status: 'loss',
+    pl: -9.86,
+    note: 'C$9.86 | Dejounte Murray had 27 PRA (needed 28.5+)'
   },
   {
     id: 1740268800141,
     type: 'parlay',
     legs: [
-      { desc: 'Scottie Barnes 6+ Assists – Raptors vs Mavs', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Toronto Raptors +5.5 vs Mavericks', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'New York Knicks +18.5 vs Lakers', sport: 'NBA', odds: '—', status: 'pending' }
+      { desc: 'Scottie Barnes 6+ Assists – Raptors vs Mavs', sport: 'NBA', odds: '—', status: 'loss' },
+      { desc: 'Toronto Raptors +5.5 vs Mavericks', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'New York Knicks +18.5 vs Lakers', sport: 'NBA', odds: '—', status: 'win' }
     ],
     stake: 5.00,
     date: '2026-03-08',
     toWin: 11.40,
     combinedOdds: '+228',
-    status: 'pending',
-    pl: 0,
-    note: 'C$5 | +228'
+    status: 'loss',
+    pl: -5.00,
+    note: 'C$5 | +228 | Barnes had 5 assists (needed 6+)'
   },
   {
     id: 1740268800142,
@@ -2182,9 +2182,9 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-08',
     toWin: 10.80,
-    status: 'pending',
-    pl: 0,
-    note: 'C$10'
+    status: 'loss',
+    pl: -10.00,
+    note: 'C$10 | Cunningham under 42.5 PRA'
   },
   {
     id: 1740268800143,
@@ -2195,43 +2195,153 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-08',
     toWin: 11.20,
-    status: 'pending',
-    pl: 0,
-    note: 'C$10'
+    status: 'loss',
+    pl: -10.00,
+    note: 'C$10 | Adebayo had 9 rebounds (needed 10+)'
   },
   {
     id: 1740268800144,
     type: 'parlay',
     legs: [
-      { desc: 'Sabres vs Lightning U1.5 1st Period Goals', sport: 'NHL', odds: '—', status: 'pending' },
-      { desc: 'Buffalo Sabres +2.5 vs Tampa Bay Lightning', sport: 'NHL', odds: '—', status: 'pending' }
+      { desc: 'Sabres vs Lightning U1.5 1st Period Goals', sport: 'NHL', odds: '—', status: 'win' },
+      { desc: 'Buffalo Sabres +2.5 vs Tampa Bay Lightning', sport: 'NHL', odds: '—', status: 'win' }
     ],
     stake: 5.00,
     date: '2026-03-08',
     toWin: 7.90,
     combinedOdds: '+158',
-    status: 'pending',
-    pl: 0,
-    note: 'C$5 | +158'
+    status: 'win',
+    pl: 7.90,
+    note: 'C$5 | +158 | 8-7 final, 1 goal in 1P ✅, Sabres won ✅'
   },
   {
     id: 1740268800145,
     type: 'parlay',
     legs: [
-      { desc: 'Da Silva U14.5 Points', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Game Total O198.5 Points – Bucks vs Magic', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Rollins U5.5 Rebounds', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Paolo Banchero 15+ Points', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Rollins 15+ Points', sport: 'NBA', odds: '—', status: 'pending' }
+      { desc: 'Da Silva U14.5 Points', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Game Total O198.5 Points – Bucks vs Magic', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Rollins U5.5 Rebounds', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Paolo Banchero 15+ Points', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Rollins 15+ Points', sport: 'NBA', odds: '—', status: 'win' }
     ],
     stake: 4.00,
     date: '2026-03-08',
     toWin: 20.54,
     combinedOdds: '+395 (+30% boost)',
+    status: 'win',
+    pl: 20.54,
+    note: 'C$4 | +395 base with 30% boost | total payout C$24.54 | Da Silva 5pts ✅, O198.5 ✅, Rollins 1reb ✅, Banchero 33pts ✅, Rollins 15pts ✅'
+  },
+  {
+    id: 1740268800146,
+    type: 'parlay',
+    legs: [
+      { desc: 'Anthony Towns 12+ Rebounds – Lakers vs Knicks', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Luka Doncic 4+ Rebounds – Lakers vs Knicks', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Pelicans ML vs Wizards', sport: 'NBA', odds: '—', status: 'win' }
+    ],
+    stake: 10.00,
+    date: '2026-03-08',
+    toWin: 26.50,
+    combinedOdds: '+265',
+    status: 'win',
+    pl: 26.50,
+    note: 'C$10 | +265'
+  },
+  {
+    id: 1740268800147,
+    type: 'single',
+    desc: 'Filipowski P+R+A O26.5 – Warriors vs Jazz',
+    sport: 'NBA',
+    odds: '+118',
+    stake: 9.96,
+    date: '2026-03-09',
+    toWin: 11.75,
     status: 'pending',
     pl: 0,
-    note: 'C$4 | +395 base with 30% boost | total payout C$24.54'
-  }
+    note: 'C$9.96'
+  },
+  {
+    id: 1740268800148,
+    type: 'single',
+    desc: 'Wallace P+R+A O16.5 – Nuggets vs Thunder',
+    sport: 'NBA',
+    odds: '+120',
+    stake: 9.80,
+    date: '2026-03-09',
+    toWin: 11.76,
+    status: 'pending',
+    pl: 0,
+    note: 'C$9.80'
+  },
+  {
+    id: 1740268800149,
+    type: 'single',
+    desc: 'Chabot 1+ Point – Senators vs Canucks',
+    sport: 'NHL',
+    odds: '+112',
+    stake: 10.00,
+    date: '2026-03-09',
+    toWin: 11.20,
+    status: 'pending',
+    pl: 0,
+    note: 'C$10'
+  },
+  {
+    id: 1740268800150,
+    type: 'single',
+    desc: 'Baez vs Madzrev – 1st Set Total Games O8.5',
+    sport: 'Tennis',
+    odds: '-200',
+    stake: 10.00,
+    date: '2026-03-09',
+    toWin: 5.00,
+    status: 'pending',
+    pl: 0,
+    note: 'C$10'
+  },
+  {
+    id: 1740268800151,
+    type: 'parlay',
+    legs: [
+      { desc: 'Scottie Barnes 6+ Assists – Raptors vs Mavs', sport: 'NBA', odds: '—', status: 'loss' },
+      { desc: 'Toronto Raptors +5.5 vs Mavericks', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'New York Knicks +18.5 vs Lakers', sport: 'NBA', odds: '—', status: 'pending' }
+    ],
+    stake: 5.00,
+    date: '2026-03-09',
+    toWin: 11.40,
+    combinedOdds: '+228',
+    status: 'loss',
+    pl: -5.00,
+    note: 'C$5 | +228 | Barnes under 6 assists'
+  },
+  {
+    id: 1740268800152,
+    type: 'single',
+    desc: 'Podziemski Assists O4.5 – Warriors vs Jazz',
+    sport: 'NBA',
+    odds: '-103',
+    stake: 8.00,
+    date: '2026-03-09',
+    toWin: 7.77,
+    status: 'pending',
+    pl: 0,
+    note: 'C$8'
+  },
+  {
+    id: 1740268800153,
+    type: 'single',
+    desc: 'Baez +5.5 Games vs Medvedev',
+    sport: 'Tennis',
+    odds: '-125',
+    stake: 5.00,
+    date: '2026-03-09',
+    toWin: 4.00,
+    status: 'pending',
+    pl: 0,
+    note: 'C$5'
+  },
 ];
 // ── Firebase SDK config ───────────────────────────────────────────────────────
 const firebaseConfig = {
