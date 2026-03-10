@@ -1125,9 +1125,9 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-01',
     toWin: 8.85,
-    status: 'pending',
+    status: 'push',
     pl: 0,
-    note: 'Clippers won 137-117'
+    note: 'Clippers won 137-117 | void'
   },
   {
     id: 1740268800064,
@@ -1684,8 +1684,8 @@ const SEED_BETS = [
     stake: 4.11,
     date: '2026-03-07',
     toWin: 7.81,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -4.11,
     note: '$3 USD | UFC 326: Holloway vs Oliveira 2'
   },
   {
@@ -2257,9 +2257,9 @@ const SEED_BETS = [
     stake: 9.96,
     date: '2026-03-09',
     toWin: 11.75,
-    status: 'pending',
-    pl: 0,
-    note: 'C$9.96'
+    status: 'win',
+    pl: 11.75,
+    note: 'C$9.96 | 19pts+15reb=34 PRA ✅'
   },
   {
     id: 1740268800148,
@@ -2270,8 +2270,8 @@ const SEED_BETS = [
     stake: 9.80,
     date: '2026-03-09',
     toWin: 11.76,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -9.80,
     note: 'C$9.80'
   },
   {
@@ -2283,9 +2283,9 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-09',
     toWin: 11.20,
-    status: 'pending',
-    pl: 0,
-    note: 'C$10'
+    status: 'win',
+    pl: 11.20,
+    note: 'C$10 | had assist ✅'
   },
   {
     id: 1740268800150,
@@ -2296,9 +2296,9 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-09',
     toWin: 5.00,
-    status: 'pending',
-    pl: 0,
-    note: 'C$10'
+    status: 'win',
+    pl: 5.00,
+    note: 'C$10 | 1st set 6-4 = 10 games ✅'
   },
   {
     id: 1740268800151,
@@ -2325,8 +2325,8 @@ const SEED_BETS = [
     stake: 8.00,
     date: '2026-03-09',
     toWin: 7.77,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -8.00,
     note: 'C$8'
   },
   {
@@ -2338,15 +2338,15 @@ const SEED_BETS = [
     stake: 5.00,
     date: '2026-03-09',
     toWin: 4.00,
-    status: 'pending',
-    pl: 0,
-    note: 'C$5'
+    status: 'loss',
+    pl: -5.00,
+    note: 'C$5 | Medvedev won 6-4, 6-0 (Baez 4 games vs 12)'
   },
   {
     id: 1740268800154,
     type: 'parlay',
     legs: [
-      { desc: 'Ottawa Senators -2.5 vs Canucks', sport: 'NHL', odds: '—', status: 'pending' },
+      { desc: 'Ottawa Senators -2.5 vs Canucks', sport: 'NHL', odds: '—', status: 'loss' },
       { desc: 'Brady Tkachuk 1+ SOG – Senators vs Canucks', sport: 'NHL', odds: '—', status: 'pending' },
       { desc: 'Jake DeBrusk 1+ SOG – Senators vs Canucks', sport: 'NHL', odds: '—', status: 'pending' }
     ],
@@ -2354,16 +2354,16 @@ const SEED_BETS = [
     date: '2026-03-09',
     toWin: 12.48,
     combinedOdds: '+312',
-    status: 'pending',
-    pl: 0,
-    note: 'C$4 | total payout C$16.48'
+    status: 'loss',
+    pl: -4.00,
+    note: 'C$4 | Ottawa won 2-0, didn\'t cover -2.5'
   },
   {
     id: 1740268800155,
     type: 'parlay',
     legs: [
-      { desc: 'Joel Farabee 1+ Points – Flames vs Capitals', sport: 'NHL', odds: '—', status: 'pending' },
-      { desc: 'Calgary Flames +3.5 vs Capitals', sport: 'NHL', odds: '—', status: 'pending' },
+      { desc: 'Joel Farabee 1+ Points – Flames vs Capitals', sport: 'NHL', odds: '—', status: 'win' },
+      { desc: 'Calgary Flames +3.5 vs Capitals', sport: 'NHL', odds: '—', status: 'loss' },
       { desc: 'Chicago Blackhawks +3.5', sport: 'NHL', odds: '—', status: 'pending' },
       { desc: 'Colorado Mammoth ML', sport: 'NLL', odds: '—', status: 'pending' }
     ],
@@ -2371,9 +2371,9 @@ const SEED_BETS = [
     date: '2026-03-09',
     toWin: 13.70,
     combinedOdds: '+274',
-    status: 'pending',
-    pl: 0,
-    note: 'C$5 | +274'
+    status: 'loss',
+    pl: -5.00,
+    note: 'C$5 | Caps beat Flames 7-3, didn\'t cover +3.5'
   },
   {
     id: 1740268800156,
@@ -2384,9 +2384,94 @@ const SEED_BETS = [
     stake: 5.00,
     date: '2026-03-09',
     toWin: 7.70,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -5.00,
     note: 'C$5'
+  },
+  {
+    id: 1740268800157,
+    type: 'single',
+    desc: 'Grimes P+R+A O30 – 76ers vs Cavaliers',
+    sport: 'NBA',
+    odds: '+115',
+    stake: 10.00,
+    date: '2026-03-09',
+    toWin: 11.50,
+    status: 'loss',
+    pl: -10.00,
+    note: 'C$10 | 17+5+3=25 PRA, under 30'
+  },
+  {
+    id: 1740268800158,
+    type: 'single',
+    desc: 'Shai Gilgeous-Alexander Rebounds O4.5 – Thunder vs Nuggets',
+    sport: 'NBA',
+    odds: '+123',
+    stake: 5.80,
+    date: '2026-03-09',
+    toWin: 7.13,
+    status: 'win',
+    pl: 7.13,
+    note: 'C$5.80 | 9 rebounds ✅'
+  },
+  {
+    id: 1740268800159,
+    type: 'parlay',
+    legs: [
+      { desc: 'Shai Gilgeous-Alexander 8+ Assists – Thunder vs Nuggets', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Denver Nuggets Over 28.5 – vs Thunder', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Warriors/Jazz Over 19.5', sport: 'NBA', odds: '—', status: 'win' }
+    ],
+    stake: 5.00,
+    date: '2026-03-09',
+    toWin: 8.40,
+    combinedOdds: '+168',
+    status: 'win',
+    pl: 8.40,
+    note: 'C$5 | +168'
+  },
+  {
+    id: 1741564800160,
+    type: 'parlay',
+    legs: [
+      { desc: 'Benedict Mathurin O18.5 Points – Pacers', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'New York Knicks +8.5 vs Clippers', sport: 'NBA', odds: '—', status: 'win' }
+    ],
+    stake: 10.00,
+    date: '2026-03-10',
+    toWin: 16.50,
+    combinedOdds: '+165',
+    status: 'win',
+    pl: 16.50,
+    note: 'C$10 | +165'
+  },
+  {
+    id: 1741564800161,
+    type: 'single',
+    desc: 'Landry Shamet 10+ Points – vs Clippers',
+    sport: 'NBA',
+    odds: '+114',
+    stake: 10.00,
+    date: '2026-03-10',
+    toWin: 11.40,
+    status: 'loss',
+    pl: -10.00,
+    note: 'C$10'
+  },
+  {
+    id: 1741564800162,
+    type: 'parlay',
+    legs: [
+      { desc: 'De'Anthony Melton 2+ Steals – Warriors vs Jazz', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Golden State Warriors +4.5 vs Jazz', sport: 'NBA', odds: '—', status: 'win' }
+    ],
+    stake: 15.00,
+    date: '2026-03-10',
+    toWin: 19.95,
+    combinedOdds: '+133',
+    status: 'win',
+    pl: 19.95,
+    note: 'C$15 | +133'
   },
 ];
 // ── Firebase SDK config ───────────────────────────────────────────────────────
