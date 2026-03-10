@@ -2483,6 +2483,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const docRef = db.collection('bets').doc('main');
+const FB_CONFIGURED = true;
 
 function setSyncStatus(state) {
   const el = document.getElementById('syncStatus');
