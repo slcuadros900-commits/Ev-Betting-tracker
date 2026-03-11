@@ -3056,7 +3056,7 @@ function renderBets(filtered) {
     const displayOdds = b.type==='parlay' ? b.combinedOdds : fmtOdds(b.odds);
     const oddsColor   = parseInt(displayOdds) > 0 ? 'var(--green)' : 'var(--text)';
     const displayDesc = b.type==='parlay'
-      ? `${b.legs.length}-leg Parlay`
+      ? (b.desc || b.legs.map(l => l.desc).join(' · '))
       : b.desc;
     const displaySport = b.type==='parlay'
       ? [...new Set(b.legs.map(l=>l.sport))].join(', ')
