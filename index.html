@@ -2127,8 +2127,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-08',
     toWin: 9.71,
-    status: 'pending',
-    pl: 0,
+    status: 'win',
+    pl: 9.71,
     note: 'C$10'
   },
   {
@@ -2788,8 +2788,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-03-12',
     toWin: 22.50,
-    status: 'pending',
-    pl: 0,
+    status: 'win',
+    pl: 22.5,
     note: 'C$15'
   },
   {
@@ -2801,24 +2801,24 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-12',
     toWin: 13.50,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -10.0,
     note: 'C$10'
   },
   {
     id: 1741737600187,
     type: 'parlay',
     legs: [
-      { desc: 'Orlando Magic ML vs Wizards', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Magic vs Wizards 1st Quarter Total Over 60', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Paolo Banchero 5+ Rebounds – Magic vs Wizards', sport: 'NBA', odds: '—', status: 'pending' }
+      { desc: 'Orlando Magic ML vs Wizards', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Magic vs Wizards 1st Quarter Total Over 60', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Paolo Banchero 5+ Rebounds – Magic vs Wizards', sport: 'NBA', odds: '—', status: 'win' }
     ],
     stake: 10.00,
     date: '2026-03-12',
     toWin: 15.60,
     combinedOdds: '+120',
-    status: 'pending',
-    pl: 0,
+    status: 'win',
+    pl: 15.60,
     note: 'C$10 | +120 w/ 30% boost | payout C$25.60'
   },
   {
@@ -2830,8 +2830,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-12',
     toWin: 8.33,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -10.0,
     note: 'C$10'
   },
   {
@@ -2843,8 +2843,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-12',
     toWin: 13.80,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -10.00,
     note: 'C$10'
   },
   {
@@ -2856,8 +2856,8 @@ const SEED_BETS = [
     stake: 13.47,
     date: '2026-03-12',
     toWin: 21.55,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -13.47,
     note: 'USD $9.83'
   },
   {
@@ -2869,8 +2869,8 @@ const SEED_BETS = [
     stake: 14.56,
     date: '2026-03-12',
     toWin: 21.55,
-    status: 'pending',
-    pl: 0,
+    status: 'win',
+    pl: 21.55,
     note: 'USD $10.63'
   },
   {
@@ -2882,8 +2882,8 @@ const SEED_BETS = [
     stake: 13.70,
     date: '2026-03-12',
     toWin: 8.62,
-    status: 'pending',
-    pl: 0,
+    status: 'win',
+    pl: 8.62,
     note: 'USD $10'
   },
   {
@@ -2895,8 +2895,8 @@ const SEED_BETS = [
     stake: 13.70,
     date: '2026-03-12',
     toWin: 10.38,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -13.7,
     note: 'USD $10'
   },
   {
@@ -2908,8 +2908,8 @@ const SEED_BETS = [
     stake: 13.70,
     date: '2026-03-12',
     toWin: 10.54,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -13.7,
     note: 'USD $10'
   },
   {
@@ -2921,8 +2921,8 @@ const SEED_BETS = [
     stake: 13.70,
     date: '2026-03-12',
     toWin: 17.12,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -13.7,
     note: 'USD $10'
   },
   {
@@ -2934,8 +2934,8 @@ const SEED_BETS = [
     stake: 6.85,
     date: '2026-03-12',
     toWin: 14.04,
-    status: 'pending',
-    pl: 0,
+    status: 'win',
+    pl: 14.04,
     note: 'USD $5'
   },
   {
@@ -2947,9 +2947,135 @@ const SEED_BETS = [
     stake: 20.55,
     date: '2026-03-12',
     toWin: 29.39,
+    status: 'win',
+    pl: 29.39,
+    note: 'USD $15'
+  },
+  {
+    id: 1741737600198,
+    type: 'single',
+    desc: 'Zakharova -2.5 vs Lanlana',
+    sport: 'Tennis',
+    odds: '-110',
+    stake: 10.00,
+    date: '2026-03-12',
+    toWin: 9.09,
+    status: 'loss',
+    pl: -10.00
+  },
+  {
+    id: 1741737600199,
+    type: 'single',
+    desc: 'TCU vs Kansas 1st Half U67',
+    sport: 'NCAAB',
+    odds: '+125',
+    stake: 10.00,
+    date: '2026-03-12',
+    toWin: 12.50,
+    status: 'win',
+    pl: 12.5
+  },
+  {
+    id: 1741737600200,
+    type: 'parlay',
+    desc: 'Holmgren 2+ Assists · Celtics +26.5 vs Thunder · Bulls vs Lakers +34.5 · Celtics/Thunder O191.5',
+    sport: 'NBA',
+    odds: '+141',
+    stake: 10.00,
+    date: '2026-03-12',
+    toWin: 14.10,
     status: 'pending',
     pl: 0,
-    note: 'USD $15'
+    legs: [
+      { desc: 'Holmgren 2+ Assists', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Celtics +26.5 vs Thunder', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Bulls vs Lakers +34.5', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Celtics/Thunder O191.5', sport: 'NBA', odds: '—', status: 'pending' }
+    ]
+  },
+  {
+    id: 1741737600201,
+    type: 'single',
+    desc: 'Ace Bailey 2+ Assists – Jazz vs Trailblazers',
+    sport: 'NBA',
+    odds: '-128',
+    stake: 20.00,
+    date: '2026-03-15',
+    toWin: 15.62,
+    status: 'loss',
+    pl: -20.00
+  },
+  {
+    id: 1741737600202,
+    type: 'single',
+    desc: 'Leonard 8+ Rebounds – Bulls vs Clippers',
+    sport: 'NBA',
+    odds: '+136',
+    stake: 5.00,
+    date: '2026-03-15',
+    toWin: 6.80,
+    status: 'loss',
+    pl: -5.00
+  },
+  {
+    id: 1741737600203,
+    type: 'parlay',
+    desc: 'Jalen Green 20+ Pts · Suns +28.5 · O193.5 Total vs Raptors',
+    sport: 'NBA',
+    odds: '+144',
+    stake: 5.00,
+    date: '2026-03-15',
+    toWin: 7.20,
+    status: 'win',
+    pl: 7.20,
+    legs: [
+      { desc: 'Jalen Green 20+ Points vs Raptors', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Suns +28.5', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Over 193.5 Total vs Raptors', sport: 'NBA', odds: '—', status: 'win' }
+    ]
+  },
+  {
+    id: 1741737600204,
+    type: 'parlay',
+    desc: 'Hawks ML + Pistons ML',
+    sport: 'NBA',
+    odds: '+36',
+    stake: 6.00,
+    date: '2026-03-15',
+    toWin: 2.18,
+    status: 'win',
+    pl: 2.18,
+    note: 'Dyson Daniels parlay | payout $8.18',
+    legs: [
+      { desc: 'Atlanta Hawks ML', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Detroit Pistons ML', sport: 'NBA', odds: '—', status: 'win' }
+    ]
+  },
+  {
+    id: 1741737600205,
+    type: 'single',
+    desc: 'Jalen Brunson O40.5 Points + Rebounds + Assists – Knicks @ Pacers',
+    sport: 'NBA',
+    odds: '+116',
+    stake: 13.92,
+    date: '2026-03-13',
+    toWin: 16.15,
+    status: 'win',
+    pl: 16.15,
+    note: 'USD $10.16'
+  },
+  {
+    id: 1741737600206,
+    type: 'single',
+    desc: 'Draymond Green 6+ Rebounds – Timberwolves @ Warriors',
+    sport: 'NBA',
+    odds: '+140',
+    stake: 20.55,
+    date: '2026-03-13',
+    toWin: 28.77,
+    status: 'push',
+    pl: 0,
+    note: 'USD $15 | VOID'
   },
 ];
 // ── Firebase SDK config ───────────────────────────────────────────────────────
