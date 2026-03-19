@@ -2984,13 +2984,13 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-12',
     toWin: 14.10,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -10.00,
     legs: [
-      { desc: 'Holmgren 2+ Assists', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Celtics +26.5 vs Thunder', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Bulls vs Lakers +34.5', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Celtics/Thunder O191.5', sport: 'NBA', odds: '—', status: 'pending' }
+      { desc: 'Holmgren 2+ Assists', sport: 'NBA', odds: '—', status: 'loss' },
+      { desc: 'Celtics +26.5 vs Thunder', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Bulls vs Lakers +34.5', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Celtics/Thunder O191.5', sport: 'NBA', odds: '—', status: 'win' }
     ]
   },
   {
@@ -3086,8 +3086,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-03-15',
     toWin: 14.10,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -15.00
   },
   {
     id: 1741737600208,
@@ -3098,8 +3098,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-03-16',
     toWin: 13.20,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -15.00
   },
   {
     id: 1741737600209,
@@ -3110,8 +3110,8 @@ const SEED_BETS = [
     stake: 25.00,
     date: '2026-03-17',
     toWin: 20.25,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 20.25
   },
   {
     id: 1741737600210,
@@ -3146,8 +3146,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-03-17',
     toWin: 21.00,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -15.00
   },
   {
     id: 1741737600213,
@@ -3158,8 +3158,9 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-03-17',
     toWin: 19.50,
-    status: 'pending',
-    pl: 0
+    status: 'push',
+    pl: 0,
+    note: 'VOID – Giannis did not play (left knee injury)'
   },
   {
     id: 1741737600214,
@@ -3194,8 +3195,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-03-16',
     toWin: 10.07,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -15.00
   },
   {
     id: 1741737600217,
@@ -3206,11 +3207,12 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-17',
     toWin: 10.50,
-    status: 'pending',
-    pl: 0,
+    status: 'loss',
+    pl: -10.00,
+    note: '4Q combined 58 pts (Hornets 40 + Heat 18) > 55.5',
     legs: [
-      { desc: 'Heat @ Hornets 4th Quarter Total U55.5', sport: 'NBA', odds: '-105', status: 'pending' },
-      { desc: 'Detroit Pistons ML vs Wizards', sport: 'NBA', odds: '-2000', status: 'pending' }
+      { desc: 'Heat @ Hornets 4th Quarter Total U55.5', sport: 'NBA', odds: '-105', status: 'loss' },
+      { desc: 'Detroit Pistons ML vs Wizards', sport: 'NBA', odds: '-2000', status: 'win' }
     ]
   },
   {
@@ -3222,14 +3224,190 @@ const SEED_BETS = [
     stake: 5.00,
     date: '2026-03-17',
     toWin: 7.47,
+    status: 'win',
+    pl: 7.47,
+    note: '+115 SGP w/ 30% boost | payout $12.47 | Robinson 22 reb, Anunoby 26 pts',
+    legs: [
+      { desc: 'Pacers @ Knicks 2nd Quarter O51.5', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Mitchell Robinson 5+ Rebounds', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'OG Anunoby 10+ Points', sport: 'NBA', odds: '—', status: 'win' }
+    ]
+  },
+  {
+    id: 1741737600219,
+    type: 'single',
+    desc: 'Nikola Jokic U1.5 Steals – 76ers @ Nuggets',
+    sport: 'NBA',
+    odds: '+123',
+    stake: 15.00,
+    date: '2026-03-17',
+    toWin: 18.45,
+    status: 'win',
+    pl: 18.45
+  },
+  {
+    id: 1741737600220,
+    type: 'single',
+    desc: 'Dominick Barlow U9.5 Points – 76ers @ Nuggets',
+    sport: 'NBA',
+    odds: '+118',
+    stake: 15.00,
+    date: '2026-03-17',
+    toWin: 17.70,
+    status: 'win',
+    pl: 17.70
+  },
+  {
+    id: 1742256000225,
+    type: 'parlay',
+    desc: 'Trail Blazers @ Pacers 3Q O56.5 · Portland ML',
+    sport: 'NBA',
+    odds: '+110',
+    stake: 5.00,
+    date: '2026-03-18',
+    toWin: 5.50,
     status: 'pending',
     pl: 0,
-    note: '+115 SGP w/ 30% boost | payout $12.47',
     legs: [
-      { desc: 'Pacers @ Knicks 2nd Quarter O51.5', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'Mitchell Robinson 5+ Rebounds', sport: 'NBA', odds: '—', status: 'pending' },
-      { desc: 'OG Anunoby 10+ Points', sport: 'NBA', odds: '—', status: 'pending' }
+      { desc: 'Trail Blazers @ Pacers 3rd Quarter O56.5', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Portland Trail Blazers ML', sport: 'NBA', odds: '—', status: 'pending' }
     ]
+  },
+  {
+    id: 1742256000226,
+    type: 'single',
+    desc: 'Yannick Hanfmann ML – vs Jodar',
+    sport: 'Tennis',
+    odds: '+150',
+    stake: 10.00,
+    date: '2026-03-18',
+    toWin: 15.00,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1742256000227,
+    type: 'parlay',
+    desc: 'Lakers @ Rockets 4Q U53.5 · Doncic 20+ Pts · Sengun 5+ Reb',
+    sport: 'NBA',
+    odds: '+115',
+    stake: 10.00,
+    date: '2026-03-18',
+    toWin: 14.95,
+    status: 'pending',
+    pl: 0,
+    note: '+115 SGP w/ 30% boost | payout $24.95',
+    legs: [
+      { desc: 'Lakers @ Rockets 4th Quarter U53.5', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Luka Doncic 20+ Points', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Alperen Sengun 5+ Rebounds', sport: 'NBA', odds: '—', status: 'pending' }
+    ]
+  },
+  {
+    id: 1742256000228,
+    type: 'parlay',
+    desc: 'OKC -4.5 3rd Quarter · OKC ML – vs Nets',
+    sport: 'NBA',
+    odds: '+100',
+    stake: 10.00,
+    date: '2026-03-18',
+    toWin: 10.00,
+    status: 'pending',
+    pl: 0,
+    legs: [
+      { desc: 'OKC Thunder -4.5 3rd Quarter vs Nets', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'OKC Thunder ML vs Nets', sport: 'NBA', odds: '—', status: 'pending' }
+    ]
+  },
+  {
+    id: 1742256000229,
+    type: 'parlay',
+    desc: 'Necas to Score · Stars +4.5 · Stars +1.5 1st Period PL – vs Avalanche',
+    sport: 'NHL',
+    odds: '+210',
+    stake: 5.00,
+    date: '2026-03-18',
+    toWin: 15.75,
+    status: 'pending',
+    pl: 0,
+    note: '+210 w/ 50% boost | payout $20.75',
+    legs: [
+      { desc: 'Martin Necas to Score a Goal – Stars vs Avalanche', sport: 'NHL', odds: '—', status: 'pending' },
+      { desc: 'Dallas Stars +4.5 – vs Avalanche', sport: 'NHL', odds: '—', status: 'pending' },
+      { desc: 'Dallas Stars +1.5 Puck Line 1st Period – vs Avalanche', sport: 'NHL', odds: '—', status: 'pending' }
+    ]
+  },
+  {
+    id: 1742256000230,
+    type: 'single',
+    desc: 'Saddiq Bey 3+ Three-Pointers – Lakers @ Pelicans',
+    sport: 'NBA',
+    odds: '+155',
+    stake: 10.00,
+    date: '2026-03-18',
+    toWin: 15.50,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1742256000231,
+    type: 'single',
+    desc: 'Muller vs Berrettini – Set 2 Total Games U9.5',
+    sport: 'Tennis',
+    odds: '+132',
+    stake: 10.00,
+    date: '2026-03-18',
+    toWin: 13.20,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1742256000224,
+    type: 'single',
+    desc: 'Reed Sheppard O20.5 PRA – Lakers @ Rockets',
+    sport: 'NBA',
+    odds: '+112',
+    stake: 10.00,
+    date: '2026-03-18',
+    toWin: 11.20,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1742256000221,
+    type: 'single',
+    desc: 'Immanuel Quickley U1.5 Steals – Raptors @ Bulls',
+    sport: 'NBA',
+    odds: '-117',
+    stake: 25.00,
+    date: '2026-03-18',
+    toWin: 21.50,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1742256000222,
+    type: 'single',
+    desc: 'Toumani Camara 6+ Rebounds – Trail Blazers @ Pacers',
+    sport: 'NBA',
+    odds: '+112',
+    stake: 15.00,
+    date: '2026-03-18',
+    toWin: 16.80,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1742256000223,
+    type: 'single',
+    desc: 'Brook Lopez 10+ Points – Clippers @ Pelicans',
+    sport: 'NBA',
+    odds: '+118',
+    stake: 20.00,
+    date: '2026-03-18',
+    toWin: 23.60,
+    status: 'pending',
+    pl: 0
   },
 ];
 // ── Firebase SDK config ───────────────────────────────────────────────────────
