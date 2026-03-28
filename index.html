@@ -4717,8 +4717,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-27',
     toWin: 12.30,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -10.0
   },
   {
     id: 1743033600337,
@@ -4729,8 +4729,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-03-27',
     toWin: 15.30,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 15.3
   },
   {
     id: 1743033600338,
@@ -4741,8 +4741,8 @@ const SEED_BETS = [
     stake: 20.00,
     date: '2026-03-27',
     toWin: 27.00,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 27.0
   },
   {
     id: 1743033600339,
@@ -4753,8 +4753,8 @@ const SEED_BETS = [
     stake: 13.76,
     date: '2026-03-27',
     toWin: 15.96,
-    status: 'pending',
-    pl: 0
+    status: 'void',
+    pl: 0.0
   },
   {
     id: 1743033600340,
@@ -4765,8 +4765,8 @@ const SEED_BETS = [
     stake: 12.00,
     date: '2026-03-27',
     toWin: 15.96,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -12.0
   },
   {
     id: 1743033600341,
@@ -4821,8 +4821,218 @@ const SEED_BETS = [
     stake: 25.00,
     date: '2026-03-27',
     toWin: 23.15,
+    status: 'win',
+    pl: 23.15
+  },
+  {
+    id: 1743033600345,
+    type: 'single',
+    desc: 'Andrew Wiggins 2+ Three-Pointers – Heat @ Cavaliers',
+    sport: 'NBA',
+    odds: '+125',
+    stake: 15.00,
+    date: '2026-03-27',
+    toWin: 18.75,
+    status: 'win',
+    pl: 18.75
+  },
+  {
+    id: 1743033600346,
+    type: 'single',
+    desc: 'First Team to Score – New York Yankees – Yankees vs Giants',
+    sport: 'MLB',
+    odds: '-160',
+    stake: 10.00,
+    date: '2026-03-27',
+    toWin: 6.25,
+    status: 'win',
+    pl: 6.25
+  },
+  {
+    id: 1743033600347,
+    type: 'single',
+    desc: 'Luka Doncic U1.5 Steals – Nets @ Lakers',
+    sport: 'NBA',
+    odds: '+128',
+    stake: 12.47,
+    date: '2026-03-27',
+    toWin: 15.96,
+    status: 'loss',
+    pl: -12.47
+  },
+  {
+    id: 1743033600348,
+    type: 'single',
+    desc: 'Will Riley U1.5 Three-Pointers – Wizards @ Warriors',
+    sport: 'NBA',
+    odds: '-127',
+    stake: 20.22,
+    date: '2026-03-27',
+    toWin: 15.92,
+    status: 'loss',
+    pl: -20.22
+  },
+  {
+    id: 1743120000349,
+    type: 'single',
+    desc: 'Kelly Oubre Jr. U11.5 Points – 76ers @ Hornets',
+    sport: 'NBA',
+    odds: '+105',
+    stake: 20.00,
+    date: '2026-03-28',
+    toWin: 21.00,
     status: 'pending',
     pl: 0
+  },
+  {
+    id: 1743120000350,
+    type: 'single',
+    desc: 'Paul George U15.5 Points – 76ers @ Hornets',
+    sport: 'NBA',
+    odds: '+104',
+    stake: 20.00,
+    date: '2026-03-28',
+    toWin: 20.80,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743120000351,
+    type: 'single',
+    desc: 'Joel Farabee U1.5 SOG – Canucks @ Flames',
+    sport: 'NHL',
+    odds: '+110',
+    stake: 20.00,
+    date: '2026-03-28',
+    toWin: 22.00,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743120000352,
+    type: 'single',
+    desc: 'Ousmane Dieng U4.5 Rebounds – Spurs @ Bucks',
+    sport: 'NBA',
+    odds: '+110',
+    stake: 10.00,
+    date: '2026-03-28',
+    toWin: 11.00,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743120000353,
+    type: 'single',
+    desc: 'Victor Robles U0.5 Hits – Guardians @ Mariners',
+    sport: 'MLB',
+    odds: '+143',
+    stake: 15.00,
+    date: '2026-03-28',
+    toWin: 21.45,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743033600354,
+    type: 'parlay',
+    legs: [
+      { desc: 'Utah Jazz Under 119.5 Total Points – Jazz @ Nuggets', sport: 'NBA', odds: '-120', status: 'loss' },
+      { desc: 'Houston Rockets ML – Rockets @ Grizzlies', sport: 'NBA', odds: '-800', status: 'win' },
+      { desc: 'OKC Thunder ML – Bulls @ Thunder', sport: 'NBA', odds: '-2400', status: 'win' }
+    ],
+    stake: 10.00,
+    date: '2026-03-27',
+    toWin: 11.50,
+    combinedOdds: '+115',
+    status: 'loss',
+    pl: -10.00,
+    note: 'C$10 stake'
+  },
+  {
+    id: 1743033600355,
+    type: 'parlay',
+    legs: [
+      { desc: 'Tamara Zidansek ML – vs Erjavec', sport: 'Tennis', odds: '—', status: 'win' },
+      { desc: 'Over 6.5 Games Set 1 – Zidansek vs Erjavec', sport: 'Tennis', odds: '—', status: 'win' }
+    ],
+    stake: 10.00,
+    date: '2026-03-27',
+    toWin: 8.70,
+    combinedOdds: '-115',
+    status: 'win',
+    pl: 8.70,
+    note: ''
+  },
+  {
+    id: 1743033600356,
+    type: 'parlay',
+    legs: [
+      { desc: 'Brandon Ingram 10+ Points – Pelicans @ Raptors', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'New Orleans Pelicans +3.0 2Q Spread – Pelicans @ Raptors', sport: 'NBA', odds: '—', status: 'loss' }
+    ],
+    stake: 10.00,
+    date: '2026-03-27',
+    toWin: 9.09,
+    combinedOdds: '-110',
+    status: 'loss',
+    pl: -10.00,
+    note: ''
+  },
+  {
+    id: 1743033600357,
+    type: 'parlay',
+    legs: [
+      { desc: 'Utah Jazz +6.5 2Q Spread – Jazz @ Nuggets', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Denver Nuggets ML – Jazz @ Nuggets', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Nikola Jokic 15+ Points – Jazz @ Nuggets', sport: 'NBA', odds: '—', status: 'win' }
+    ],
+    stake: 10.00,
+    date: '2026-03-27',
+    toWin: 14.95,
+    combinedOdds: '+115',
+    status: 'win',
+    pl: 14.95,
+    note: '30% profit boost applied'
+  },
+  {
+    id: 1743120000358,
+    type: 'parlay',
+    legs: [
+      { desc: 'Over 8.5 Games Set 1 – Sabalenka vs Gauff', sport: 'Tennis', odds: '—', status: 'pending' },
+      { desc: 'Over 20.5 Total Games – Sabalenka vs Gauff', sport: 'Tennis', odds: '—', status: 'pending' },
+      { desc: 'Aryna Sabalenka 1+ Aces – vs Gauff', sport: 'Tennis', odds: '—', status: 'pending' }
+    ],
+    stake: 15.00,
+    date: '2026-03-28',
+    toWin: 25.35,
+    combinedOdds: '+130',
+    status: 'pending',
+    pl: 0,
+    note: '30% profit boost applied'
+  },
+  {
+    id: 1743033600359,
+    type: 'single',
+    desc: 'Luka Doncic 5+ Made Threes – Nets @ Lakers',
+    sport: 'NBA',
+    odds: '+160',
+    stake: 10.00,
+    date: '2026-03-27',
+    toWin: 16.00,
+    status: 'win',
+    pl: 16.00
+  },
+  {
+    id: 1743033600360,
+    type: 'single',
+    desc: 'Jerami Grant 4+ Rebounds – Mavs @ Trail Blazers',
+    sport: 'NBA',
+    odds: '+124',
+    stake: 10.00,
+    date: '2026-03-27',
+    toWin: 12.40,
+    status: 'win',
+    pl: 12.40
   },
 ];
 // ── Firebase SDK config ───────────────────────────────────────────────────────
