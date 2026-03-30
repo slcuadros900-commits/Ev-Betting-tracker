@@ -5067,8 +5067,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-29',
     toWin: 10.20,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -10.0
   },
   {
     id: 1743206400364,
@@ -5079,8 +5079,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-29',
     toWin: 15.50,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -10.0
   },
   {
     id: 1743206400365,
@@ -5091,8 +5091,8 @@ const SEED_BETS = [
     stake: 13.31,
     date: '2026-03-29',
     toWin: 15.97,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 15.97
   },
   {
     id: 1743206400366,
@@ -5103,8 +5103,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-29',
     toWin: 13.20,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -10.0
   },
   {
     id: 1743206400367,
@@ -5127,8 +5127,8 @@ const SEED_BETS = [
     stake: 17.74,
     date: '2026-03-29',
     toWin: 15.84,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 15.97
   },
   {
     id: 1743206400369,
@@ -5139,6 +5139,149 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-03-29',
     toWin: 9.09,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743206400370,
+    type: 'single',
+    desc: 'Trey Murphy III U1.5 Steals – Rockets @ Pelicans',
+    sport: 'NBA',
+    odds: '-124',
+    stake: 9.86,
+    date: '2026-03-29',
+    toWin: 7.95,
+    status: 'void',
+    pl: 0
+  },
+  {
+    id: 1743292800371,
+    type: 'single',
+    desc: 'Jose Caballero U0.5 Hits – Yankees @ Mariners',
+    sport: 'MLB',
+    odds: '+102',
+    stake: 15.00,
+    date: '2026-03-30',
+    toWin: 15.30,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743292800372,
+    type: 'single',
+    desc: 'Keldon Johnson O13.5 Points – Bulls @ Spurs',
+    sport: 'NBA',
+    odds: '+106',
+    stake: 15.06,
+    date: '2026-03-30',
+    toWin: 15.96,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743292800373,
+    type: 'single',
+    desc: 'Onyeka Okongwu O22.5 PRA – Celtics @ Hawks',
+    sport: 'NBA',
+    odds: '+117',
+    stake: 10.23,
+    date: '2026-03-30',
+    toWin: 11.97,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743292800374,
+    type: 'single',
+    desc: 'Corey Seager O0.5 Runs – Rangers @ Orioles',
+    sport: 'MLB',
+    odds: '+114',
+    stake: 17.51,
+    date: '2026-03-30',
+    toWin: 19.96,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743206400375,
+    type: 'parlay',
+    legs: [
+      { desc: 'Houston Rockets ML – Rockets @ Pelicans', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Kevin Durant 15+ Points – Rockets @ Pelicans', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Houston Rockets 1st Half ML – Rockets @ Pelicans', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Zion Williamson 10+ Points – Rockets @ Pelicans', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Trey Murphy III 1+ Threes Made – Rockets @ Pelicans', sport: 'NBA', odds: '—', status: 'void' },
+      { desc: 'Reed Sheppard 1+ Threes Made – Rockets @ Pelicans', sport: 'NBA', odds: '—', status: 'win' }
+    ],
+    stake: 10.00,
+    date: '2026-03-29',
+    toWin: 14.29,
+    combinedOdds: '-105',
+    status: 'win',
+    pl: 14.29,
+    note: '50% profit boost applied'
+  },
+  {
+    id: 1743206400376,
+    type: 'parlay',
+    legs: [
+      { desc: 'Richie Palacios O0.5 Hits – Rays @ Cardinals', sport: 'MLB', odds: '—', status: 'loss' },
+      { desc: 'Tampa Bay Rays +4.0 Run Line – Rays @ Cardinals', sport: 'MLB', odds: '—', status: 'win' },
+      { desc: 'Under 13.5 Total Runs – Rays @ Cardinals', sport: 'MLB', odds: '—', status: 'loss' }
+    ],
+    stake: 10.00,
+    date: '2026-03-29',
+    toWin: 10.40,
+    combinedOdds: '+104',
+    status: 'loss',
+    pl: -10.00,
+    note: 'C$10 stake'
+  },
+  {
+    id: 1743292800377,
+    type: 'single',
+    desc: 'San Diego Padres F5I ML – Giants @ Padres',
+    sport: 'MLB',
+    odds: '+102',
+    stake: 5.00,
+    date: '2026-03-30',
+    toWin: 5.10,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743292800378,
+    type: 'single',
+    desc: 'Toronto Blue Jays O5.5 Alt Total Runs – Rockies @ Blue Jays',
+    sport: 'MLB',
+    odds: '+142',
+    stake: 5.00,
+    date: '2026-03-30',
+    toWin: 7.10,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743292800379,
+    type: 'single',
+    desc: 'LA Dodgers -2.5 Alt Run Line – Guardians @ Dodgers',
+    sport: 'MLB',
+    odds: '+186',
+    stake: 4.00,
+    date: '2026-03-30',
+    toWin: 7.44,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743292800380,
+    type: 'single',
+    desc: 'Evan Mobley U17.5 Points – Cavaliers @ Jazz',
+    sport: 'NBA',
+    odds: '+108',
+    stake: 14.79,
+    date: '2026-03-30',
+    toWin: 15.97,
     status: 'pending',
     pl: 0
   },
