@@ -5509,7 +5509,7 @@ const SEED_BETS = [
     stake: 5.00,
     date: '2026-03-31',
     toWin: 9.75,
-    status: 'pending',
+    status: 'void',
     pl: 0
   },
   {
@@ -5545,8 +5545,8 @@ const SEED_BETS = [
     stake: 5.00,
     date: '2026-04-01',
     toWin: 5.50,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -5.00
   },
   {
     id: 1743465600402,
@@ -5557,7 +5557,7 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-04-01',
     toWin: 12.50,
-    status: 'pending',
+    status: 'void',
     pl: 0
   },
   {
@@ -5585,8 +5585,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-04-01',
     toWin: 13.20,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -15.00
   },
   {
     id: 1743465600405,
@@ -5597,8 +5597,8 @@ const SEED_BETS = [
     stake: 11.44,
     date: '2026-04-01',
     toWin: 8.01,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -11.44
   },
   {
     id: 1743465600406,
@@ -5609,8 +5609,8 @@ const SEED_BETS = [
     stake: 7.48,
     date: '2026-04-01',
     toWin: 8.00,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -7.48
   },
   {
     id: 1743465600407,
@@ -5621,8 +5621,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-04-01',
     toWin: 13.80,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 13.80
   },
   {
     id: 1743465600408,
@@ -5633,8 +5633,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-04-01',
     toWin: 15.30,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 15.30
   },
   {
     id: 1743465600409,
@@ -5645,8 +5645,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-04-01',
     toWin: 13.80,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -10.00
   },
   {
     id: 1743465600410,
@@ -5657,8 +5657,8 @@ const SEED_BETS = [
     stake: 16.34,
     date: '2026-04-01',
     toWin: 16.01,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -16.34
   },
   {
     id: 1743465600411,
@@ -5669,8 +5669,8 @@ const SEED_BETS = [
     stake: 7.28,
     date: '2026-04-01',
     toWin: 8.01,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -7.28
   },
   {
     id: 1743465600412,
@@ -5681,8 +5681,8 @@ const SEED_BETS = [
     stake: 9.10,
     date: '2026-04-01',
     toWin: 8.01,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 8.01
   },
   {
     id: 1743465600413,
@@ -5693,8 +5693,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-04-01',
     toWin: 18.80,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -10.00
   },
   {
     id: 1743465600414,
@@ -5705,8 +5705,8 @@ const SEED_BETS = [
     stake: 30.00,
     date: '2026-04-01',
     toWin: 21.60,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -30.00
   },
   {
     id: 1743465600415,
@@ -5717,8 +5717,8 @@ const SEED_BETS = [
     stake: 20.86,
     date: '2026-04-01',
     toWin: 20.03,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 20.03
   },
   {
     id: 1743465600416,
@@ -5729,8 +5729,8 @@ const SEED_BETS = [
     stake: 20.00,
     date: '2026-04-01',
     toWin: 19.20,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -20.00
   },
   {
     id: 1743465600417,
@@ -5741,8 +5741,8 @@ const SEED_BETS = [
     stake: 21.53,
     date: '2026-04-01',
     toWin: 20.02,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -21.53
   },
   {
     id: 1743465600418,
@@ -5753,8 +5753,8 @@ const SEED_BETS = [
     stake: 10.01,
     date: '2026-04-01',
     toWin: 8.01,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 8.01
   },
   {
     id: 1743465600419,
@@ -5765,8 +5765,300 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-04-01',
     toWin: 17.40,
+    status: 'loss',
+    pl: -15.00
+  },
+  {
+    id: 1743552000420,
+    type: 'parlay',
+    legs: [
+      { desc: 'Tomas Machac ML – Jodar vs Machac', sport: 'Tennis', odds: '—', status: 'pending' },
+      { desc: 'Over 6.5 Games Set 1 – Jodar vs Machac', sport: 'Tennis', odds: '—', status: 'pending' },
+      { desc: 'No 6-6 Reached in Final Set – Jodar vs Machac', sport: 'Tennis', odds: '—', status: 'pending' }
+    ],
+    stake: 10.00,
+    date: '2026-04-02',
+    toWin: 10.00,
+    combinedOdds: '+100',
+    status: 'loss',
+    pl: -10.00,
+    note: ''
+  },
+  {
+    id: 1743465600421,
+    type: 'single',
+    desc: 'Scottie Barnes 20+ Points – Kings @ Raptors',
+    sport: 'NBA',
+    odds: '+123',
+    stake: 10.00,
+    date: '2026-04-01',
+    toWin: 12.30,
+    status: 'loss',
+    pl: -10.00
+  },
+  {
+    id: 1743465600422,
+    type: 'single',
+    desc: 'Nikola Joki\u0107 Under 0.5 Blocks – Nuggets @ Jazz',
+    sport: 'NBA',
+    odds: '+188',
+    stake: 4.28,
+    date: '2026-04-01',
+    toWin: 8.05,
+    status: 'win',
+    pl: 8.05
+  },
+  {
+    id: 1743465600423,
+    type: 'single',
+    desc: 'Houston Rockets -10.5 1st Half Spread – Rockets vs Bucks',
+    sport: 'NBA',
+    odds: '+112',
+    stake: 10.00,
+    date: '2026-04-01',
+    toWin: 11.20,
+    status: 'loss',
+    pl: -10.00
+  },
+  {
+    id: 1743552000424,
+    type: 'single',
+    desc: 'De Reales vs Arango – Under 22.5 Total Games',
+    sport: 'Tennis',
+    odds: '-125',
+    stake: 15.00,
+    date: '2026-04-02',
+    toWin: 12.00,
+    status: 'win',
+    pl: 12.00
+  },
+  {
+    id: 1743638400425,
+    type: 'single',
+    desc: 'Titouan Droguet 1st Set ML – Baez vs Droguet',
+    sport: 'Tennis',
+    odds: '+200',
+    stake: 5.00,
+    date: '2026-04-03',
+    toWin: 10.00,
+    status: 'win',
+    pl: 10.00
+  },
+  {
+    id: 1743638400426,
+    type: 'single',
+    desc: 'Jessica Pegula -4.5 Game Spread – Pegula vs Shnaider',
+    sport: 'Tennis',
+    odds: '-108',
+    stake: 10.00,
+    date: '2026-04-03',
+    toWin: 9.26,
+    status: 'loss',
+    pl: -10.00
+  },
+  {
+    id: 1743638400427,
+    type: 'parlay',
+    legs: [
+      { desc: 'A Run in 1st Inning – Dodgers @ Nationals', sport: 'MLB', odds: '—', status: 'win' },
+      { desc: 'Emmet Sheehan 3+ Strikeouts – Dodgers @ Nationals', sport: 'MLB', odds: '—', status: 'loss' },
+      { desc: 'LA Dodgers +2.5 Run Line – Dodgers @ Nationals', sport: 'MLB', odds: '—', status: 'win' }
+    ],
+    stake: 10.00,
+    date: '2026-04-03',
+    toWin: 11.00,
+    combinedOdds: '+110',
+    status: 'loss',
+    pl: -10.00,
+    note: '30% Profit Boost'
+  },
+  {
+    id: 1743638400428,
+    type: 'parlay',
+    legs: [
+      { desc: 'Under 4.5 Runs First 5 Innings – Marlins @ Yankees', sport: 'MLB', odds: '—', status: 'loss' },
+      { desc: 'Eury Perez 4+ Strikeouts – Marlins @ Yankees', sport: 'MLB', odds: '—', status: 'win' },
+      { desc: 'NY Yankees +3.5 Run Line – Marlins @ Yankees', sport: 'MLB', odds: '—', status: 'win' }
+    ],
+    stake: 10.00,
+    date: '2026-04-03',
+    toWin: 12.50,
+    combinedOdds: '+125',
+    status: 'loss',
+    pl: -10.00,
+    note: '30% Profit Boost'
+  },
+  {
+    id: 1743638400429,
+    type: 'single',
+    desc: 'Derik Queen 8+ Rebounds – Pelicans @ Kings',
+    sport: 'NBA',
+    odds: '+145',
+    stake: 15.00,
+    date: '2026-04-03',
+    toWin: 21.75,
+    status: 'loss',
+    pl: -15.00
+  },
+  {
+    id: 1743638400430,
+    type: 'single',
+    desc: 'Paul George 30+ PRA – Timberwolves @ 76ers',
+    sport: 'NBA',
+    odds: '+104',
+    stake: 10.00,
+    date: '2026-04-03',
+    toWin: 10.40,
+    status: 'win',
+    pl: 10.40
+  },
+  {
+    id: 1743638400431,
+    type: 'single',
+    desc: 'Ziaire Williams 4+ Rebounds – Hawks @ Nets',
+    sport: 'NBA',
+    odds: '+143',
+    stake: 11.20,
+    date: '2026-04-03',
+    toWin: 16.02,
+    status: 'loss',
+    pl: -11.20
+  },
+  {
+    id: 1743638400432,
+    type: 'single',
+    desc: 'Alec Bohm Over 1.5 Hits – Phillies @ Rockies',
+    sport: 'MLB',
+    odds: '+170',
+    stake: 5.89,
+    date: '2026-04-03',
+    toWin: 10.01,
+    status: 'win',
+    pl: 10.01
+  },
+  {
+    id: 1743638400433,
+    type: 'single',
+    desc: 'Milwaukee Brewers 1st 3 Innings ML – Brewers @ Royals',
+    sport: 'MLB',
+    odds: '+110',
+    stake: 10.91,
+    date: '2026-04-03',
+    toWin: 12.00,
+    status: 'void',
+    pl: 0
+  },
+  {
+    id: 1743638400434,
+    type: 'single',
+    desc: 'Jalen Brunson Over 38.5 PRA – Bulls @ Knicks',
+    sport: 'NBA',
+    odds: '+120',
+    stake: 10.01,
+    date: '2026-04-03',
+    toWin: 12.01,
+    status: 'loss',
+    pl: -10.01
+  },
+  {
+    id: 1743638400435,
+    type: 'single',
+    desc: 'Zaccharie Risacher Over 7.5 Points – Hawks @ Nets',
+    sport: 'NBA',
+    odds: '+110',
+    stake: 14.57,
+    date: '2026-04-03',
+    toWin: 16.03,
+    status: 'loss',
+    pl: -14.57
+  },
+  {
+    id: 1743724800436,
+    type: 'single',
+    desc: 'Pete Crow-Armstrong To Hit a Single – Cubs @ Guardians',
+    sport: 'MLB',
+    odds: '+130',
+    stake: 10.00,
+    date: '2026-04-04',
+    toWin: 13.00,
     status: 'pending',
     pl: 0
+  },
+  {
+    id: 1743724800437,
+    type: 'single',
+    desc: 'Under 64.5 2nd Quarter Total Points – Wizards @ Heat',
+    sport: 'NBA',
+    odds: '-115',
+    stake: 10.00,
+    date: '2026-04-04',
+    toWin: 8.70,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743724800438,
+    type: 'single',
+    desc: 'Arizona Diamondbacks 1st 3 Innings ML – Braves @ D-backs',
+    sport: 'MLB',
+    odds: '+102',
+    stake: 15.00,
+    date: '2026-04-04',
+    toWin: 15.30,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743724800439,
+    type: 'single',
+    desc: 'Arizona Diamondbacks First Team to Score – Braves @ D-backs',
+    sport: 'MLB',
+    odds: '+155',
+    stake: 15.00,
+    date: '2026-04-04',
+    toWin: 23.25,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743724800440,
+    type: 'single',
+    desc: 'Philadelphia Phillies -3.0 Run Line – Phillies @ Rockies',
+    sport: 'MLB',
+    odds: '+138',
+    stake: 5.00,
+    date: '2026-04-04',
+    toWin: 6.90,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743724800441,
+    type: 'single',
+    desc: 'Ausar Thompson Over 1.5 Steals – Pistons vs 76ers',
+    sport: 'NBA',
+    odds: '-137',
+    stake: 15.00,
+    date: '2026-04-04',
+    toWin: 10.95,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743724800442,
+    type: 'parlay',
+    legs: [
+      { desc: 'No Run in 1st Inning – Blue Jays @ White Sox', sport: 'MLB', odds: '—', status: 'pending' },
+      { desc: 'CHI White Sox +5.5 Run Line – Blue Jays @ White Sox', sport: 'MLB', odds: '—', status: 'pending' },
+      { desc: 'Mason Fluharty 1+ Strikeouts – Blue Jays @ White Sox', sport: 'MLB', odds: '—', status: 'pending' }
+    ],
+    stake: 10.00,
+    date: '2026-04-04',
+    toWin: 16.90,
+    combinedOdds: '+130',
+    status: 'pending',
+    pl: 0,
+    note: '30% Profit Boost'
   },
 ];
 // ── Firebase SDK config ───────────────────────────────────────────────────────
