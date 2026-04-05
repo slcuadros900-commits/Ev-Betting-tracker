@@ -6005,8 +6005,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-04-04',
     toWin: 15.30,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 15.30
   },
   {
     id: 1743724800439,
@@ -6017,8 +6017,8 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-04-04',
     toWin: 23.25,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -15.00
   },
   {
     id: 1743724800440,
@@ -6029,8 +6029,8 @@ const SEED_BETS = [
     stake: 5.00,
     date: '2026-04-04',
     toWin: 6.90,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -5.00
   },
   {
     id: 1743724800441,
@@ -6041,24 +6041,232 @@ const SEED_BETS = [
     stake: 15.00,
     date: '2026-04-04',
     toWin: 10.95,
-    status: 'pending',
-    pl: 0
+    status: 'win',
+    pl: 10.95
   },
   {
     id: 1743724800442,
     type: 'parlay',
     legs: [
-      { desc: 'No Run in 1st Inning – Blue Jays @ White Sox', sport: 'MLB', odds: '—', status: 'pending' },
-      { desc: 'CHI White Sox +5.5 Run Line – Blue Jays @ White Sox', sport: 'MLB', odds: '—', status: 'pending' },
-      { desc: 'Mason Fluharty 1+ Strikeouts – Blue Jays @ White Sox', sport: 'MLB', odds: '—', status: 'pending' }
+      { desc: 'No Run in 1st Inning – Blue Jays @ White Sox', sport: 'MLB', odds: '—', status: 'loss' },
+      { desc: 'CHI White Sox +5.5 Run Line – Blue Jays @ White Sox', sport: 'MLB', odds: '—', status: 'win' },
+      { desc: 'Mason Fluharty 1+ Strikeouts – Blue Jays @ White Sox', sport: 'MLB', odds: '—', status: 'loss' }
     ],
     stake: 10.00,
     date: '2026-04-04',
     toWin: 16.90,
     combinedOdds: '+130',
+    status: 'loss',
+    pl: -10.00,
+    note: '30% Profit Boost'
+  },
+  {
+    id: 1743638400443,
+    type: 'parlay',
+    legs: [
+      { desc: 'Over 4.5 Runs First 5 Innings – Brewers @ Royals', sport: 'MLB', odds: '—', status: 'void' },
+      { desc: 'Chad Patrick 2+ Strikeouts – Brewers @ Royals', sport: 'MLB', odds: '—', status: 'void' },
+      { desc: 'KC Royals +5.5 Run Line – Brewers @ Royals', sport: 'MLB', odds: '—', status: 'void' }
+    ],
+    stake: 10.00,
+    date: '2026-04-03',
+    toWin: 12.00,
+    combinedOdds: '+120',
+    status: 'void',
+    pl: 0,
+    note: '30% Profit Boost'
+  },
+  {
+    id: 1743638400444,
+    type: 'single',
+    desc: 'Milwaukee Brewers First Team to Score – Brewers @ Royals',
+    sport: 'MLB',
+    odds: '-145',
+    stake: 15.00,
+    date: '2026-04-03',
+    toWin: 10.34,
+    status: 'void',
+    pl: 0
+  },
+  {
+    id: 1743811200445,
+    type: 'single',
+    desc: 'Lando Vannata vs Darrius Flowers – Over 1.5 Total Rounds',
+    sport: 'MMA',
+    odds: '-170',
+    stake: 15.00,
+    date: '2026-04-05',
+    toWin: 8.82,
+    status: 'loss',
+    pl: -15.00
+  },
+  {
+    id: 1743811200446,
+    type: 'single',
+    desc: 'No Run in 1st Inning – Mariners @ Angels',
+    sport: 'MLB',
+    odds: '+125',
+    stake: 5.00,
+    date: '2026-04-05',
+    toWin: 6.25,
+    status: 'loss',
+    pl: -5.00
+  },
+  {
+    id: 1743811200447,
+    type: 'single',
+    desc: 'No Run in 1st Inning – Mariners @ Angels',
+    sport: 'MLB',
+    odds: '+130',
+    stake: 10.00,
+    date: '2026-04-05',
+    toWin: 13.00,
+    status: 'loss',
+    pl: -10.00
+  },
+  {
+    id: 1743811200448,
+    type: 'single',
+    desc: 'Jessica Pegula -5.5 Games Won Spread – Pegula vs Starodubtseva',
+    sport: 'Tennis',
+    odds: '-120',
+    stake: 15.00,
+    date: '2026-04-05',
+    toWin: 12.50,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743811200449,
+    type: 'parlay',
+    legs: [
+      { desc: 'Nathan MacKinnon Anytime Goalscorer – Blues @ Avalanche', sport: 'NHL', odds: '—', status: 'pending' },
+      { desc: 'Nathan MacKinnon 2+ Shots on Goal – Blues @ Avalanche', sport: 'NHL', odds: '—', status: 'pending' },
+      { desc: 'Colorado Avalanche +2.5 Puck Line – Blues @ Avalanche', sport: 'NHL', odds: '—', status: 'pending' }
+    ],
+    stake: 10.00,
+    date: '2026-04-05',
+    toWin: 16.25,
+    combinedOdds: '+125',
     status: 'pending',
     pl: 0,
     note: '30% Profit Boost'
+  },
+  {
+    id: 1743811200450,
+    type: 'parlay',
+    legs: [
+      { desc: 'No Run in 1st Inning – Astros @ Athletics', sport: 'MLB', odds: '—', status: 'pending' },
+      { desc: 'Athletics +5.5 Run Line – Astros @ Athletics', sport: 'MLB', odds: '—', status: 'pending' },
+      { desc: 'Nick Kurtz Under 0.5 Doubles – Astros @ Athletics', sport: 'MLB', odds: '—', status: 'pending' }
+    ],
+    stake: 10.00,
+    date: '2026-04-05',
+    toWin: 26.25,
+    combinedOdds: '+175',
+    status: 'pending',
+    pl: 0,
+    note: '50% Profit Boost'
+  },
+  {
+    id: 1743984000451,
+    type: 'single',
+    desc: 'Shapovalov vs Blockx – Under 23.5 Total Games',
+    sport: 'Tennis',
+    odds: '-125',
+    stake: 15.00,
+    date: '2026-04-07',
+    toWin: 12.00,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743811200452,
+    type: 'parlay',
+    legs: [
+      { desc: 'Over 62.0 Points 1st Quarter – Suns @ Bulls', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Phoenix Suns Moneyline (Early Payout) – Suns @ Bulls', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Jalen Green 10+ Points – Suns @ Bulls', sport: 'NBA', odds: '—', status: 'pending' }
+    ],
+    stake: 10.00,
+    date: '2026-04-05',
+    toWin: 18.20,
+    combinedOdds: '+140',
+    status: 'pending',
+    pl: 0,
+    note: '30% Profit Boost'
+  },
+  {
+    id: 1743811200453,
+    type: 'single',
+    desc: 'Travis d'Arnaud To Record a Hit – Mariners @ Angels',
+    sport: 'MLB',
+    odds: '-115',
+    stake: 10.00,
+    date: '2026-04-05',
+    toWin: 8.70,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743811200454,
+    type: 'single',
+    desc: 'NY Yankees -3.0 Run Line – Marlins @ Yankees',
+    sport: 'MLB',
+    odds: '+165',
+    stake: 10.00,
+    date: '2026-04-05',
+    toWin: 16.50,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743811200455,
+    type: 'single',
+    desc: 'Luke Raley Over 0.5 Runs Scored – Mariners @ Angels',
+    sport: 'MLB',
+    odds: '+117',
+    stake: 8.56,
+    date: '2026-04-05',
+    toWin: 10.02,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743811200456,
+    type: 'single',
+    desc: 'Jalen Green Over 4.5 Rebounds – Suns @ Bulls',
+    sport: 'NBA',
+    odds: '+114',
+    stake: 7.03,
+    date: '2026-04-05',
+    toWin: 8.01,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743811200457,
+    type: 'single',
+    desc: 'Jose Altuve Over 0.5 Runs Scored – Astros @ Athletics',
+    sport: 'MLB',
+    odds: '+100',
+    stake: 10.01,
+    date: '2026-04-05',
+    toWin: 10.01,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1743811200458,
+    type: 'single',
+    desc: 'Rudy Gobert 2+ Blocks – Hornets @ Timberwolves',
+    sport: 'NBA',
+    odds: '+135',
+    stake: 11.87,
+    date: '2026-04-05',
+    toWin: 16.02,
+    status: 'pending',
+    pl: 0
   },
 ];
 // ── Firebase SDK config ───────────────────────────────────────────────────────
