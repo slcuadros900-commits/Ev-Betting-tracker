@@ -5981,7 +5981,7 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-04-04',
     toWin: 13.00,
-    status: 'pending',
+    status: 'void',
     pl: 0
   },
   {
@@ -6205,7 +6205,7 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-04-05',
     toWin: 8.70,
-    status: 'pending',
+    status: 'void',
     pl: 0
   },
   {
@@ -6217,8 +6217,8 @@ const SEED_BETS = [
     stake: 10.00,
     date: '2026-04-05',
     toWin: 16.50,
-    status: 'pending',
-    pl: 0
+    status: 'loss',
+    pl: -10.00
   },
   {
     id: 1743811200455,
@@ -6530,7 +6530,7 @@ const SEED_BETS = [
   {
     id: 1744070400480,
     type: 'single',
-    desc: 'St. Louis Cardinals SGP',
+    desc: 'St. Louis Cardinals SGP – No Run 1st / WAS +4.5 / STL Over 0.5 Runs',
     sport: 'MLB',
     odds: '+110',
     stake: 10.00,
@@ -6561,6 +6561,114 @@ const SEED_BETS = [
     date: '2026-04-08',
     toWin: 5.00,
     status: 'void',
+    pl: 0
+  },
+  {
+    id: 1744070400483,
+    type: 'single',
+    desc: 'Jalen Brunson 8+ Assists',
+    sport: 'NBA',
+    odds: '+130',
+    stake: 10.00,
+    date: '2026-04-08',
+    toWin: 13.00,
+    status: 'win',
+    pl: 13.00
+  },
+  {
+    id: 1744070400484,
+    type: 'single',
+    desc: 'Hurkacz Total Games Over 12.5',
+    sport: 'Tennis',
+    odds: '+115',
+    stake: 5.00,
+    date: '2026-04-08',
+    toWin: 5.75,
+    status: 'win',
+    pl: 5.75
+  },
+  {
+    id: 1744070400485,
+    type: 'parlay',
+    legs: [
+      { desc: 'Q1 Over 63.0 Points – Grizzlies @ Nuggets', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Denver Nuggets ML – Grizzlies @ Nuggets', sport: 'NBA', odds: '—', status: 'win' },
+      { desc: 'Memphis Grizzlies +43.5 – Grizzlies @ Nuggets', sport: 'NBA', odds: '—', status: 'win' }
+    ],
+    stake: 10.00,
+    date: '2026-04-08',
+    toWin: 13.65,
+    combinedOdds: '+105',
+    status: 'win',
+    pl: 13.65,
+    note: ''
+  },
+  {
+    id: 1744070400486,
+    type: 'single',
+    desc: 'Cincinnati Reds -1.0 Run Line',
+    sport: 'MLB',
+    odds: '+160',
+    stake: 10.00,
+    date: '2026-04-08',
+    toWin: 16.00,
+    status: 'loss',
+    pl: -10.00
+  },
+  {
+    id: 1744070400487,
+    type: 'parlay',
+    legs: [
+      { desc: 'No Run in 1st Inning – Cardinals game', sport: 'MLB', odds: '—', status: 'pending' },
+      { desc: 'WAS Nationals +4.5 Run Line', sport: 'MLB', odds: '—', status: 'pending' },
+      { desc: 'STL Cardinals Over 0.5 Runs', sport: 'MLB', odds: '—', status: 'pending' }
+    ],
+    stake: 10.00,
+    date: '2026-04-08',
+    toWin: 11.00,
+    combinedOdds: '+110',
+    status: 'loss',
+    pl: -10.00,
+    note: ''
+  },
+  {
+    id: 1744070400488,
+    type: 'parlay',
+    legs: [
+      { desc: 'Q3 Over 55.5 Points – 76ers @ Rockets', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Philadelphia 76ers +24.5 – 76ers @ Rockets', sport: 'NBA', odds: '—', status: 'pending' },
+      { desc: 'Over 211.5 Total Points – 76ers @ Rockets', sport: 'NBA', odds: '—', status: 'pending' }
+    ],
+    stake: 15.00,
+    date: '2026-04-08',
+    toWin: 17.25,
+    combinedOdds: '+115',
+    status: 'loss',
+    pl: -15.00,
+    note: ''
+  },
+  {
+    id: 1744243200490,
+    type: 'single',
+    desc: 'Josh Lowe Over 0.5 Hits',
+    sport: 'MLB',
+    odds: '-112',
+    stake: 10.00,
+    date: '2026-04-10',
+    toWin: 8.93,
+    status: 'pending',
+    pl: 0
+  },
+  {
+    id: 1744243200491,
+    type: 'single',
+    desc: 'Nick Kurtz Over 0.5 Runs Scored',
+    sport: 'MLB',
+    odds: '+120',
+    stake: 8.42,
+    date: '2026-04-10',
+    toWin: 10.10,
+    status: 'pending',
     pl: 0
   },
 ];
